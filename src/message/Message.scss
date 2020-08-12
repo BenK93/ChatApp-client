@@ -1,0 +1,33 @@
+@import "../colors";
+
+.message-component {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+
+  .message-sender {
+    color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    text-align: center;
+    flex-shrink: 0;
+    padding: 0px 10px;
+    font-size: smaller;
+  }
+
+  .message-content {
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    background-color: $light_blue;
+    padding: 16px;
+    border-radius: 8px;
+    // overflow-y: scroll;
+    // white-space: nowrap;
+  }
+
+  &.aligned-right {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../colors";
+
+.left-menu-component {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  min-height: 600px;
+  background-color: $light_blue;
+  border-right: solid 1px $border_color;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .room-container {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-bottom: solid 1px $border_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .participants-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .items-wrapper {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      word-wrap: break-word;
+      overflow: scroll;
+    }
+  }
+
+  .header {
+    color: $page_color;
+    font-size: 24px;
+    font-weight: bold;
+
+    &.room {
+      color: $blue;
+      font-style: italic;
+    }
+  }
+}
