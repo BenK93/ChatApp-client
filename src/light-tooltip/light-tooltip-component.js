@@ -1,7 +1,7 @@
 import { withStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 
-const LightTooltip = withStyles((theme) => ({
+const LightTooltipComponent = withStyles((theme) => ({
   tooltip: {
     backgroundColor: theme.palette.common.white,
     color: "rgba(0, 0, 0, 0.87)",
@@ -10,4 +10,4 @@ const LightTooltip = withStyles((theme) => ({
   },
 }))(Tooltip);
 
-export default LightTooltip;
+export default LightTooltipComponent;

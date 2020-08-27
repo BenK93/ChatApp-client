@@ -31,5 +31,23 @@
       color: $page_color;
       padding-right: 2px;
     }
+
+    &.icon-button {
+      background-color: transparent;
+      width: 3em;
+      height: 3em;
+      border: none;
+      outline: none;
+      align-items: center;
+
+      &hover {
+        color: $light_blue;
+        cursor: pointer;
+      }
+    }
   }
+}
+
+::placeholder {
+  font-size: 15px;
 }

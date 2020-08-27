@@ -2,14 +2,12 @@
 
 .message-component {
   width: 100%;
-  height: fit-content;
   display: flex;
   align-items: center;
   padding: 15px;
 
   .message-sender {
     color: rgba(0, 0, 0, 0.5);
-    width: fit-content;
     text-align: center;
     flex-shrink: 0;
     padding: 0px 10px;
@@ -17,14 +15,15 @@
   }
 
   .message-content {
-    width: fit-content;
-    height: fit-content;
     color: black;
     background-color: $light_blue;
     padding: 16px;
     border-radius: 8px;
-    // overflow-y: scroll;
-    // white-space: nowrap;
+    word-break: break-word;
+
+    &.aligned-right {
+      background-color: rgba(107, 208, 255, 0.4);
+    }
   }
 
   &.aligned-right {

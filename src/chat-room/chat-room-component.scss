@@ -47,7 +47,7 @@
 
         #messages-component-wrapper {
           flex-grow: 1;
-          padding: 5px;
+          padding: 5px 20px;
           overflow-y: scroll;
         }
 
@@ -67,11 +67,11 @@
   border: none;
   outline: none;
   align-items: center;
-}
 
-.icon-button:hover {
-  color: $light_blue;
-  cursor: pointer;
+  &hover {
+    color: $light_blue;
+    cursor: pointer;
+  }
 }
 
 ::placeholder {
