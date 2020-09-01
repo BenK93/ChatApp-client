@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { Link } from "react-router-dom";
 import classnames from "classnames";
+
 import "./join-component.scss";
 
 const ENTER_KEY_CODE = 13;
@@ -18,6 +19,7 @@ export default class JoinComponent extends PureComponent {
   }
 
   componentDidMount() {
+    // Adding an event listener for a key press
     document.addEventListener("keydown", this.handleKeyDown);
   }
 
@@ -25,17 +27,35 @@ export default class JoinComponent extends PureComponent {
     document.removeEventListener("keydown", this.handleKeyDown);
   }
 
+  /**
+   * Creates a link to the chat room with a user name and a room name.
+   *
+   * @returns {string} Link to chat.
+   */
   getRedirectedLink() {
     const { userName, roomName } = this.state;
     return `/chat?userName=${userName}&roomName=${roomName}`;
   }
 
+  /**
+   * Handles a mouse click on the enter room button.
+   * Will prevent the event default behavior.
+   *
+   * @param {*} event
+   */
   handleClick = (event) => {
     const { userName, roomName } = this.state;
     if (!userName || !roomName) {
       event.preventDefault();
     }
   };
+
+  /**
+   * Handles a keyboard key press.
+   * Will push to props.history the redirected link if all input are with value.
+   *
+   * @param {*} event
+   */
 
   handleKeyDown = (event) => {
     const { userName, roomName } = this.state;

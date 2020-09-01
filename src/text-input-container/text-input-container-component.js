@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import "./text-input-container.scss";
+
+import "./text-input-container-component.scss";
 import LightTooltipComponent from "../light-tooltip/light-tooltip-component";
 
 const ENTER_KEY_CODE = 13;
@@ -8,7 +9,7 @@ const SPACE_KEY_CODE = 16;
 export default class TextInputComponent extends PureComponent {
   constructor(props) {
     super(props);
-
+    this.keys = [];
     this.state = {
       content: null,
     };
@@ -16,10 +17,12 @@ export default class TextInputComponent extends PureComponent {
 
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyDown);
+    document.addEventListener("keyup", this.handleKeyUp);
   }
 
   componentWillUnmount() {
     document.removeEventListener("keydown", this.handleKeyDown);
+    document.removeEventListener("keyup", this.handleKeyUp);
   }
 
   setContent(content) {
@@ -29,15 +32,20 @@ export default class TextInputComponent extends PureComponent {
   }
 
   handleKeyDown = (event) => {
-    if (event.keyCode === ENTER_KEY_CODE && event.keyCode !== SPACE_KEY_CODE) {
+    this.keys[event.keyCode] = true;
+    if (this.keys[ENTER_KEY_CODE] && !this.keys[SPACE_KEY_CODE]) {
       event.preventDefault();
       this.sendMessage();
     }
   };
 
+  handleKeyUp = (event) => {
+    delete this.keys[event.keyCode];
+  };
+
   sendMessage = async () => {
     const { content } = this.state;
-    const { userName, roomName, addMessages } = this.props;
+    const { userName, roomName } = this.props;
 
     if (!content) return;
 
@@ -48,7 +56,9 @@ export default class TextInputComponent extends PureComponent {
       date: new Date(),
     };
 
-    const response = await fetch("http://localhost:5000/messages/create", {
+    document.getElementById("text-input").value = "";
+
+    await fetch("http://localhost:5000/messages/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,10 +66,6 @@ export default class TextInputComponent extends PureComponent {
       body: JSON.stringify(data),
     });
 
-    const message = await response.json(response.body);
-    addMessages(message);
-
-    document.getElementById("text-input").value = "";
     this.setState({ content: null });
   };
 

@@ -7,8 +7,19 @@
   display: flex;
   align-items: center;
 
-  .back {
+  .back-button {
     color: $page_color;
+    background-color: $blue;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
     margin-left: 8px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+    }
   }
 }

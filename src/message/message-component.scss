@@ -10,7 +10,7 @@
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
     flex-shrink: 0;
-    padding: 0px 10px;
+    padding: 0px 20px;
     font-size: smaller;
   }
 
@@ -19,6 +19,7 @@
     background-color: $light_blue;
     padding: 16px;
     border-radius: 8px;
+    box-shadow: 5px 5px 3px $border_color;
     word-break: break-word;
 
     &.aligned-right {

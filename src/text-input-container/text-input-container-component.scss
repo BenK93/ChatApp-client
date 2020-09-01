@@ -23,19 +23,10 @@
   .send {
     border-radius: 50%;
 
-    &:hover {
-      background-color: $light_blue;
-    }
-
-    .fa-paper-plane {
-      color: $page_color;
-      padding-right: 2px;
-    }
-
     &.icon-button {
       background-color: transparent;
-      width: 3em;
-      height: 3em;
+      width: 40px;
+      height: 40px;
       border: none;
       outline: none;
       align-items: center;
@@ -44,6 +35,14 @@
         color: $light_blue;
         cursor: pointer;
       }
+    }
+
+    &:hover {
+      background-color: $light_blue;
+    }
+
+    .fa-paper-plane {
+      padding-right: 2px;
     }
   }
 }
