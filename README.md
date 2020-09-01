@@ -1,6 +1,6 @@
 <img src="/public/media/speech-bubble.png" alt="chat logo" width="200" height="200"/>
 
-# Chat Web Application - Server Side
+# Chat Web Application
 
 Creating using:
 
