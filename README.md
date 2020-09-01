@@ -2,4 +2,14 @@
 
 # Chat Web Application - Server Side
 
-<img src="/public/join-screen-shot.png" width="500" height="400"/><img src="/public/in-chat-screen-shot3.png" width="500" height="400"/>
+Creating using:
+
+- React
+- Node.js
+- Express
+- MongoDB with Mongoose
+- Socket.IO
+
+## Screen Shots:
+
+<img src="/public/join-screen-shot.png" alt="join screen shot" width="500" height="400"/><img alt="in chat screen shot" src="/public/in-chat-screen-shot3.png" width="500" height="400"/>
