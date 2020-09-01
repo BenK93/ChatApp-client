@@ -2,4 +2,4 @@
 
 # Chat Web Application - Server Side
 
-<img src="/public/join-screen-shot.png" width="548" height="423"/><img src="/public/in-chat-screen-shot3.png" width="548" height="423"/>
+<img src="/public/join-screen-shot.png" width="548" height="423"/><img src="/public/in-chat-screen-shot3.png" width="500" height="400"/>
