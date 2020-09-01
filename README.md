@@ -5,7 +5,7 @@
 Creating using:
 
 - React <img src="/public/media/favicon-react.ico" alt="react icon" width="20" height="20"/>
-- Node.js <img src="/public/media/nodejs.png" alt="react icon" width="30" height="30"/>
+- <img src="/public/media/nodejs.png" alt="react icon" width="30" height="30"/> Node.js 
 - Express <img src="/public/media/express-js-cyberpanel.jpg" alt="express icon" width="80" height="40"/>
 - MongoDB with Mongoose <img src="/public/media/mongodb.png" alt="mongodb icon" width="20" height="20"/>
 - Socket.IO <img src="/public/media/socket-io.png" alt="socketio icon" width="20" height="20"/>
