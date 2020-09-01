@@ -4,7 +4,7 @@
 
 Creating using:
 
-- React <img src="//public/favicon-react.ico" alt="react favicon"/>
+- React <img src="/public/favicon-react.ico" alt="react favicon"/>
 - Node.js
 - Express
 - MongoDB with Mongoose
