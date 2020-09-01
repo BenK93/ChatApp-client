@@ -2,6 +2,8 @@
 
 # Chat Web Application
 
+> Server side: [ChatApp-server](https://github.com/OdedNir/ChatApp-server) 
+
 Creating using:
 
 - React  <img src="/public/media/favicon-react.ico" alt="react icon" width="20" height="20"/>
