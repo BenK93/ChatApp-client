@@ -4,11 +4,11 @@
 
 Creating using:
 
-- React <img src="/public/media/favicon-react.ico" alt="react favicon" width="20" height="20"/>
-- Node.js
-- Express
-- MongoDB with Mongoose
-- Socket.IO
+- React <img src="/public/media/favicon-react.ico" alt="react icon" width="20" height="20"/>
+- Node.js <img src="/public/media/nodejs.png" alt="react icon" width="20" height="20"/>
+- Express <img src="/public/media/express-js-cyberpanel.jpg" alt="express icon" width="60" height="20"/>
+- MongoDB with Mongoose <img src="/public/media/mongodb.png" alt="mongodb icon" width="20" height="20"/>
+- Socket.IO <img src="/public/media/socket-io.png" alt="socketio icon" width="20" height="20"/>
 
 ## Features
 
