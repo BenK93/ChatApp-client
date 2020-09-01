@@ -14,9 +14,17 @@ Creating using:
 
 ## Features
 
-- Real time massaging
-- Multiple rooms and users
--
+- Real-time massaging
+- Join multiple rooms
+- Connected to database
+- Easy to use
+
+## Dependencies
+
+Use 
+```shell 
+npm install
+```
 
 ## Screen Shots
 
