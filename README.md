@@ -21,10 +21,15 @@ Creating using:
 
 ## Dependencies
 
-Use 
 ```shell 
 npm install
 ```
+For the following:
+- react
+- react-router-dom
+- lodash
+- classnames
+- socket.io-client
 
 ## Screen Shots
 
