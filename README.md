@@ -2,7 +2,7 @@
 
 # Chat Web Application
 
-> Server side: [ChatApp-server](https://github.com/OdedNir/ChatApp-server) 
+> Server side repo: [ChatApp-server](https://github.com/OdedNir/ChatApp-server) 
 
 Creating using:
 
