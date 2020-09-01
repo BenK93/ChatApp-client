@@ -1,1 +1,1 @@
-![Chat Logo](/public/speech-bubble.png)
+![Chat Logo](/public/speech-bubble.png =100x100)
