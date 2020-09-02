@@ -2,6 +2,8 @@
 
 # Chat - Web Application
 
+Fast real-time messaging app with multiple rooms and users. No authentication needed - just user name and a room for entering.
+
 > Server side repo: [ChatApp-server](https://github.com/OdedNir/ChatApp-server) 
 
 Created using:
@@ -15,7 +17,7 @@ Created using:
 ## How To Use
 Clone the repository, `npm install` all dependencies and then `npm start` to open the Chat app on your browser.
 
-### MUST: Clone the server side repository in order that the app will work.
+### MUST: Clone the server side repository so the app will work and will communicate with server.
 
 It runs locally on `localhost:3000` and fetching from server on `localhost:5000`.
 
