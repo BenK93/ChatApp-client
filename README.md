@@ -12,6 +12,13 @@ Created using:
 - MongoDB with Mongoose  <img src="/public/media/mongodb.png" alt="mongodb icon" width="25" height="20"/>
 - Socket.IO  <img src="/public/media/socket-io.png" alt="socketio icon" width="20" height="20"/>
 
+## How To Use
+Clone the repository, `npm install` all dependencies and then `npm start` to open the Chat app on your browser.
+
+### MUST: Clone the server side repository in order that the app will work.
+
+It runs locally on `localhost:3000` and fetching from server on `localhost:5000`.
+
 ## Features
 
 - Real-time massaging
@@ -21,10 +28,7 @@ Created using:
 
 ## Dependencies
 
-```shell 
-npm install
-```
-For the following:
+Use `npm install` for the following:
 - react
 - react-router-dom
 - lodash
@@ -33,5 +37,5 @@ For the following:
 
 ## Screen Shots
 
-Join view: <img src="/public/media/join-screen-shot.png" alt="join screen shot" width="500" height="400"/>
-Chat view: <img alt="in chat screen shot" src="/public/media/in-chat-screen-shot3.png" width="500" height="400"/>
+<img src="/public/media/join-screen-shot.png" alt="join screen shot" width="550" height="450"/>
+<img alt="in chat screen shot" src="/public/media/in-chat-screen-shot3.png" width="550" height="450"/>
