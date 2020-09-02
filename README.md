@@ -2,7 +2,7 @@
 
 # Chat - Web Application
 
-Fast real-time messaging app with multiple rooms and users. No authentication needed - just user name and a room for entering.
+Fast real-time messaging app with multiple rooms and users. No authentication needed! Just enter with user name and room name.
 
 > Server side repo: [ChatApp-server](https://github.com/OdedNir/ChatApp-server) 
 
