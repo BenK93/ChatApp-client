@@ -41,4 +41,4 @@ Use `npm install` for the following:
 
 | Join view | Chat view |
 :--------:|:--------:
-| <img src="/public/media/join-screen-shot.png" alt="join screen shot" width="550" height="400"/> | <img alt="in chat screen shot" src="/public/media/in-chat-screen-shot3.png" width="550" height="400"/> |
+| <img src="/public/media/join-screen-shot.png" alt="join screen shot" width="550" height="380"/> | <img alt="in chat screen shot" src="/public/media/in-chat-screen-shot3.png" width="550" height="380"/> |
