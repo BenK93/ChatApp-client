@@ -39,7 +39,7 @@ Use `npm install` for the following:
 
 ## Screen Shots
 
-Join view | Chat view 
+| Join view | Chat view |
 :--------:|:--------:
-<img src="/public/media/join-screen-shot.png" alt="join screen shot" width="550" height="450"/> |
-<img alt="in chat screen shot" src="/public/media/in-chat-screen-shot3.png" width="550" height="450"/>
+| <img src="/public/media/join-screen-shot.png" alt="join screen shot" width="500" height="400"/> |
+<img alt="in chat screen shot" src="/public/media/in-chat-screen-shot3.png" width="450" height="350"/> |
