@@ -9,7 +9,7 @@ import LeftMenuComponent from "../left-menu/left-menu-component";
 import MessageComponent from "../message/message-component";
 import TextInputComponent from "../text-input-container/text-input-container-component";
 
-const END_POINT = "localhost:5000";
+const END_POINT = "http://100.24.236.188";
 let socket = io(END_POINT);
 
 class ChatRoomComponent extends PureComponent {
@@ -27,6 +27,7 @@ class ChatRoomComponent extends PureComponent {
           date: new Date(),
         },
       ],
+      // Creating a initial room with this username.
       room: {
         roomName: this.roomName,
         userNames: [this.userName],
@@ -34,6 +35,9 @@ class ChatRoomComponent extends PureComponent {
     };
   }
 
+  /**
+   * Setting the global variables from the location.search parameters.
+   */
   setGlobalVariables() {
     const { userName, roomName } = queryString.parse(
       this.props.location.search
@@ -46,7 +50,10 @@ class ChatRoomComponent extends PureComponent {
 
   componentDidMount() {
     this.createRoom();
-    // With socket.io implementation:
+    window.onbeforeunload = (event) => {
+      event.preventDefault();
+      this.removeUser();
+    };
     socket.on("user joined", this.AddNewUserMessage);
     socket.on("message sent", this.getMessage);
   }
@@ -66,13 +73,17 @@ class ChatRoomComponent extends PureComponent {
     socket.off("user joined", this.AddNewUserMessage);
   }
 
+  /**
+   * Creating or getting a room from server.
+   */
   async createRoom() {
+    console.log("in create room");
     const data = {
       roomName: this.roomName,
       userName: this.userName,
     };
 
-    const response = await fetch("http://localhost:5000/rooms/create", {
+    const response = await fetch(`${END_POINT}/rooms/create`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -113,7 +124,7 @@ class ChatRoomComponent extends PureComponent {
   };
 
   removeUser = async () => {
-    await fetch("http://localhost:5000/rooms/removeUser", {
+    await fetch(`${END_POINT}/rooms/removeUser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

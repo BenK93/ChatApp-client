@@ -14,6 +14,7 @@ export default class LeftMenuComponent extends PureComponent {
   }
 
   componentDidMount() {
+    this.getUserNames();
     socket.on("user joined", this.addUser);
     socket.on("user left", this.removeUser);
   }
@@ -52,6 +53,8 @@ export default class LeftMenuComponent extends PureComponent {
     );
 
     const room = await response.json();
+
+    if (!room) return;
 
     this.setState({
       userNames: uniq([...this.state.userNames, ...room.userNames]),
