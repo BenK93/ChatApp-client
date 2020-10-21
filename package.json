@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://odednir.github.io/ChatApp-client",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@material-ui/core": "^4.11.0",
@@ -10,7 +9,6 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "classnames": "^2.2.6",
-    "gh-pages": "^3.1.0",
     "hover.css": "^2.3.2",
     "lodash": "^4.17.20",
     "node-sass": "^4.14.1",
@@ -26,9 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
