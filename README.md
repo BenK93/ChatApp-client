@@ -10,7 +10,7 @@ Created using:
 
 - React <img src="/public/media/react.svg" alt="react icon" width="24" height="24"/>
 - Node.js <img src="/public/media/node-dot-js.svg" alt="node icon" width="24" height="24"/>
-- <img src="/public/media/express-js-cyberpanel.jpg" alt="express icon" width="100" height="30"/>
+- Express.js <img src="/public/media/expressjs-icon.svg" alt="express icon" width="24" height="24"/>
 - MongoDB with Mongoose <img src="/public/media/mongodb.svg" alt="mongodb icon" width="24" height="24"/>
 - Socket.IO <img src="/public/media/socket-dot-io.svg" alt="socketio icon" width="24" height="24"/>
 
