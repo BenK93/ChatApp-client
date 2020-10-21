@@ -8,7 +8,7 @@ Fast real-time messaging app with multiple rooms and users. No authentication ne
 
 Created using:
 
-- <div align="justify">React <img src="/public/media/react.svg" alt="react icon" width="24" height="24"/></div>
+- React <img src="/public/media/react.svg" alt="react icon" width="24" height="24"/>
 - Node.js <img src="/public/media/node-dot-js.svg" alt="node icon" width="24" height="24"/>
 - Express.js <img src="/public/media/expressjs-icon.svg" alt="express icon" width="24" height="24"/>
 - MongoDB with Mongoose <img src="/public/media/mongodb.svg" alt="mongodb icon" width="24" height="24"/>
